@@ -29,7 +29,7 @@ trash = []
 #Initialize and costruct the Player objects
 players = testUtility.get_players(player_names)
 
-#TEST SCENERIO: Replace Silver in supply with a typo lowercase silver
+#TEST SCENERIO: Replace Treasures in supply with a typo lowercase treasure
 del supply["Silver"]
 supply["silver"] = [Dominion.Silver()] * 40
 del supply["Copper"]
