@@ -11,12 +11,8 @@ import testUtility
 #Get player names
 player_names = testUtility.default_player()
 
-#number of curses and victory cards
-if len(player_names)>2:
-    nV=12
-else:
-    nV=8
-nC = -10 + 10 * len(player_names)
+#Get number of victory cards and curse cards
+nV, nC = testUtility.get_nCards(player_names)
 
 #Initialize and construct box
 box = testUtility.get_boxes(nV)

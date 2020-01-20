@@ -13,6 +13,16 @@ def default_player():
     player_names = ["Annie","*Ben","*Carla"]
     return player_names
 
+def get_nCards(players):
+    # number of curses and victory cards
+    if len(players) > 2:
+        nV = 12
+    else:
+        nV = 8
+    nC = -10 + 10 * len(players)
+
+    return nV, nC
+
 def get_boxes(nV):
     # Define box
     box = {}
