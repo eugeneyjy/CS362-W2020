@@ -32,6 +32,11 @@ players = testUtility.get_players(player_names)
 #TEST SCENERIO: Replace Silver in supply with a typo lowercase silver
 del supply["Silver"]
 supply["silver"] = [Dominion.Silver()] * 40
+del supply["Copper"]
+supply["copper"] = [Dominion.Copper()] * (60 - len(player_names) * 7)
+del supply["Gold"]
+supply["gold"] = [Dominion.Gold()] * 30
+
 
 #Play the game
 turn  = 0
